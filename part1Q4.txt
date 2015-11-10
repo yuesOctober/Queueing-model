@@ -1,0 +1,4 @@
+Average Service Time: 1.00311
+Second moment average service time is: 1.99017
+Theoretical waiting time using PK with simulated average service time and average second moment service time: 0.427033
+Somulated waiting time: 0.420469
