@@ -1,4 +1,4 @@
-// EE 465, USC
+// copyright: yueshi@usc.edu
 // Simulation of an M/M/S/N system
 
 #include <iostream>
