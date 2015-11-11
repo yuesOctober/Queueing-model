@@ -1,5 +1,5 @@
 // EE 465, USC
-// Simulation of an M/M/1 system
+// Simulation of an M/M/S/N system
 
 #include <iostream>
 #include <fstream>
