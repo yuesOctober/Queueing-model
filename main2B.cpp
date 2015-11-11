@@ -1,5 +1,5 @@
-// EE 465, USC
-// Simulation of an M/G/1 system
+// copyright: yueshi@usc.edu
+// Simulation of an M/M/N system with certain dropping rate and return rate
 
 #include <iostream>
 #include <fstream>
