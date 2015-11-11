@@ -13,21 +13,22 @@ How to run
 first run the command :make 
  
 (1)For part 1:
-case1 command:./part1 1
-case2 command:./part1 2
-case3 command:./part1 3
+case1: M/M/1/inifinite, with arrival rate = 0.3; departure rate = 1, FIFO, 5000 arrivals. command:./part1 1
+case2: M/M/1/inifinite, with arrival rate = 0.97; departure rate = 1, FIFO, 5000 arrivals. command:./part1 2
+case3: M/M/2/5, with arrival rate = 0.7; departure rate = 1, FIFO, 10000 arrivals. command:./part1 3
 (2)For part2:
-main2A:
-case1 command:./part2A 1
-case2 command:./part2A 2
-case3 command:./part2A 3
-case4 command:./part2A 4
-case5 command:./part2A 5
-main2B.cpp
-case1 command:./part2B 1
-case2 command:./part2B 2
-case3 command:./part2B 3
-(3)For part3
+main2A: (five servers, one queue)
+case1: arrival rate = 0.2; departure rate = 1,dropping probability= 0. command:./part2A 1
+case2: arrival rate = 0.8; departure rate = 1,dropping probability= 0. command:./part2A 2
+case3: arrival rate = 0.5; departure rate = 1,dropping probability= 0. command:./part2A 3
+case4: arrival rate = 0.5; departure rate = 1,dropping probability= 0.08 .command:./part2A 4
+case5: arrival rate = 0.5; departure rate = 1,dropping probability= 0.4 . command:./part2A 5
+main2B.cpp: (five servers, five queues, 1/5 probability go to each queue)
+case1: arrival rate = 0.2; departure rate = 1,dropping probability= 0. command:./part2B 1
+case2: arrival rate = 0.8; departure rate = 1,dropping probability= 0. command:./part2B 2
+case3: arrival rate = 0.5; departure rate = 1,dropping probability= 0. command:./part2B 3
+(3)For part3, M/G/1 queue, service time S:
+f(S)=a*m^a/(1-(m/M)^a) * S^(-a-1), m<=S<=M, m=1, M=10^4, a=1.3
    a)command eg:./part3 1000000 123
    b)in order to get the relation of average service time and the number of samples ,command:./part3avg
    c)in order to get the relation of average delay in system and the number of samples , command:./part3Qlast
